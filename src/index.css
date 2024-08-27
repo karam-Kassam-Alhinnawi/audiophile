@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .mid-orange {
+    color: #d87d4a;
+    }
+  }
+
+body{
+    font-family: 'Manrope' !important;
+}
+
+.hero{
+    background-size: cover !important;
+    background-position: center !important;
+    background: url(../src/assets/home/desktop/image-hero.jpg) center center;
+    height: 90vh !important;
+}
+
+.navlinks:hover, .active, .best-gear-span{
+    color: #d87d4a;
+}
+
+.active{
+    border-bottom: 2px solid rgb(216, 125, 74);   
+}
+
+.zx7Speaker{
+    background: url(../src/assets/home/desktop/image-speaker-zx7.jpg) center center no-repeat !important;
+    background-size: cover !important;
+}
+
+input[type="radio"]:checked{
+   accent-color: #d87d4a;
+}
+input[type="radio"]{
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero{
+        background: url(../src/assets/home/mobile/image-header.jpg);
+    }
+    .zx7Speaker {
+        background: url(../src/assets/home/mobile/image-speaker-zx7.jpg) !important;
+    }
+}
+
+@media screen and (max-width: 1026px) {
+    .hero{
+        background: url(../src/assets/home/tablet/image-header.jpg);
+    }
+    .outer-products{
+        flex-direction: column !important;
+    }
+}
